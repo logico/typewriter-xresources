@@ -1,0 +1,78 @@
+! Typewriter light
+! Scheme: Typewriter (https://github.com/logico-dev)
+
+#define black    #080808
+#define bblack   #464646
+
+#define blue    #00BAFF
+#define bblue   #767676
+
+#define green    #464646
+#define bgreen   #009900
+
+#define yellow   #B2B2B2
+#define byellow  #B2B2B2
+
+#define cyan     #949494
+#define bcyan    #949494
+
+#define white    #eeeeee
+#define bwhite   #ffffff
+
+#define magenta  #E41D91
+#define bmagenta #E41D91
+
+#define red      #626262
+#define bred     #626262
+
+#define fg       #464646
+
+*.foreground:   fg
+#ifdef background_opacity
+*.background:   [background_opacity]white
+#else
+*.background:   white
+#endif
+*.cursorColor:  blue
+
+! Black
+*.color0:       black
+*.color8:       bblack
+
+! Blue
+*.color4:       blue
+*.color12:      bblue
+
+! Green
+*.color2:       green
+*.color10:      bgreen
+
+! Yellow
+*.color3:       yellow
+*.color11:      byellow
+
+! Cyan
+*.color6:       cyan
+*.color14:      bcyan
+
+! White
+*.color7:       white
+*.color15:      bwhite
+
+! Magenta
+*.color5:       magenta
+*.color13:      bmagenta
+
+! Red
+*.color1:       red
+*.color9:       bred
+
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+*.color16:      base09
+*.color17:      base0F
+*.color18:      base01
+*.color19:      base02
+*.color20:      base04
+*.color21:      base06
