@@ -7,16 +7,18 @@
 #define red      #DBDBDB
 #define bred     #DBDBDB
 
-#define yellow   #7A7A7A
-#define byellow  #7A7A7A
+#define yellow   #5A5A5A
+#define byellow  #5A5A5A
 
-#define green    #C9C9C9
+! Color 49
+#define green    #646464
 #define bgreen   #00FFAF
 
 #define blue     #00BAFF
 #define bblue    #767676
 
 #define magenta  #E41D91
+! Color 199
 #define bmagenta #FF00AF
 
 #define cyan     #949494
@@ -25,7 +27,7 @@
 #define white    #262626
 #define bwhite   #4C4C4C
 
-#define fg       #C9C9C9
+#define fg       #EFEFEF
 
 *.foreground:     fg
 #ifdef background_opacity
@@ -33,7 +35,7 @@
 #else
 *.background:     white
 #endif
-*.cursorColor:    bmagenta
+*.cursorColor:    #528BFF
 *.underlineColor: yellow
 
 ! Black

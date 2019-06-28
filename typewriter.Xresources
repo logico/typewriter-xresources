@@ -33,7 +33,7 @@
 #else
 *.background:     white
 #endif
-*.cursorColor:    bmagenta
+*.cursorColor:    #528BFF
 *.underlineColor: yellow
 
 ! Black
